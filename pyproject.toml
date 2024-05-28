@@ -10,7 +10,7 @@ pytorchdetr = "detr:main"
 
 
 [project]
-name            = "ditr"
+name            = "pytorch_ditr"
 version         = "0.0.1"
 description     = "DETR: End-toEnd Object Detection with Transformers"
 readme          = "README.md"
