@@ -54,7 +54,7 @@ dependencies = [
 
 [project.optional-dependencies]
 third-party = [
-    git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi,
+    git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
     ]
 
 [project.urls]
