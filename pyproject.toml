@@ -23,7 +23,9 @@ authors = [
     { name = "Two Six Technologies", email = "armory@twosixtech.com" },
 ]
 
-keywords = [ ]
+keywords = [
+    "placeholder"
+]
 
 classifiers = [
     "Development Status :: Archived",
