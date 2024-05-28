@@ -47,11 +47,15 @@ dependencies = [
     "pycocotools",
     "cython",
     "submitit",
-    git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi,
     "scipy",
     "onnx",
     "onnxruntime"
 ]
+
+[project.optional-dependencies]
+third-party = [
+    git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi,
+    ]
 
 [project.urls]
 GitHub = "https://github.com/twosixlabs/detr"
