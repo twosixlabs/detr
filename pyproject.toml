@@ -54,8 +54,8 @@ dependencies = [
 
 [project.optional-dependencies]
 third-party = [
-    git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
-    ]
+    "panopticapi @ git+https://github.com/cocodataset/panopticapi.git"
+]
 
 [project.urls]
 GitHub = "https://github.com/twosixlabs/detr"
