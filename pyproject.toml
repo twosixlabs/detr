@@ -1,0 +1,71 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+    "hatchling >= 1.11.0",
+    "pip >= 22.0.0"
+]
+
+[project.scripts]
+pytorchdetr = "detr:main"
+
+
+[project]
+name            = "ditr"
+version         = "0.0.1"
+description     = "DETR: End-toEnd Object Detection with Transformers"
+readme          = "README.md"
+requires-python = ">=3.8"
+license-files = { paths = ["LICENSE"] }
+
+
+authors = [
+    { name = "Facebook Research", email = "facebookresearch@github.com" },
+    { name = "Two Six Technologies", email = "armory@twosixtech.com" },
+]
+
+keywords = [ ]
+
+classifiers = [
+    "Development Status :: Archived",
+    "License :: OSI Approved :: Apache License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "numpy",
+    "torch",
+    "tensorboardX",
+    "scikit_image",
+    "matplotlib",
+    "tqdm",
+    "easydict",
+    "Pillow",
+    "opencv_python",
+    "pycocotools",
+    "cython",
+    "submitit",
+    git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi,
+    "scipy",
+    "onnx",
+    "onnxruntime"
+]
+
+[project.urls]
+GitHub = "https://github.com/twosixlabs/detr"
+
+
+[tool.hatch.build]
+ignore-vcs   = false
+reproducible = true
+directory    = "dist"
+include = [
+    "detr/",
+    "LICENSE",
+    "pyproject.toml",
+    "README.md"
+]
+
+
+[tool.hatch.metadata]
+allow-direct-references = true
